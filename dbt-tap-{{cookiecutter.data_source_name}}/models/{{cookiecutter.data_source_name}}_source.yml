@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: {{ cookiecutter.data_source_name }}_source
+    schema: {% raw %}"{{ env_var('DBT_TARGET_SCHEMA') }}"{% endraw %}
+    description: Data synced from {{ cookiecutter.data_source_name }}.
+    tables:
+      - name: source_name
+        description: source_description
