@@ -1,4 +1,4 @@
-name: tap-{{ cookiecutter.data_source_name }}
+name: tap_{{ cookiecutter.data_source_name }}
 version: "0.1.0"
 require-dbt-version: [">=0.20.0", "<=1.0.0"]
 
